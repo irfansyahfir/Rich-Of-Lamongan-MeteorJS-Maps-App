@@ -1,0 +1,55 @@
+<template name="directionPage">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Tunjukkan Arah</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    <div class="list">
+        
+        <label class="item item-input item-select">
+            <div class="input-label">
+                Tujuan
+            </div>
+            <select class="data-city" id="end">
+                <option value="sukorame">Sukorame</option>
+                <option value="Bluluk Kecamatan, Cangkring, Bluluk">Bluluk</option>
+                <option value="ngimbang, east java">Ngimbang</option>
+                <option value="Sambeng, East Java">Sambeng</option>
+                <option value="Mantup Kecamatan, Mantup">Mantup</option>
+                <option value="Kembangbahu, East Java">Kembangbahu</option>
+                <option value="Sugio, East Java">Sugio</option>
+                <option value="Kedungpring, East Java">Kedungpring</option>
+                <option value="Modo, East Java">Modo</option>
+                <option value="Babat, East Java">Babat</option>
+                <option value="Pucuk, East Java">Pucuk</option>
+                <option value="Sukodadi, East Java">Sukodadi</option>
+                <option value="Kecamatan Lamongan, East Java">Lamongan</option>
+                <option value="Tikung, East Java">Tikung</option>
+                <option value="Sarirejo, East Java">Sarirejo</option>
+                <option value="Deket, East Java">Deket</option>
+                <option value="Glagah, East Java">Glagah</option>
+                <option value="Karangbinangun, East Java">Karangbinangun</option>
+                <option value="Turi, East Java">Turi</option>
+                <option value="Kalitengah, East Java">Kalitengah</option>
+                <option value="Karanggeneng, East Java">Karanggeneng</option>
+                <option value="Sekaran, East Java">Sekaran</option>
+                <option value="Maduran, East Java">Maduran</option>
+                <option value="Laren, East Java">Laren</option>
+                <option value="Solokuro, East Java">Solokuro</option>
+                <option value="Paciran, East Java">Paciran</option>
+                <option value="Brondong, East Java">Brondong</option>
+            </select>
+        </label>
+    </div>
+    <button class="button-click button button-block button-assertive">Tunjukkan Arah</button>
+    {{> mapDirection name="directionMap" options="directionMapOptions"}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

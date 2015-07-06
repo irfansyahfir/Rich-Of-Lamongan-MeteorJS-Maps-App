@@ -1,0 +1,54 @@
+<template name="cariPotensi">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="index"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Cari Potensi</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <ul class="list">
+        <a href="{{pathFor 'listPotBm'}}"><li class="item">Bawang Merah</li></a>
+        <a href="{{pathFor 'listPotBlewah'}}"><li class="item">Blewah</li></a>
+        <a href="{{pathFor 'listPotBlimbing'}}"><li class="item">Blimbing</li></a>
+        <a href="{{pathFor 'listPotCabeBesar'}}"><li class="item">Cabe Besar</li></a>
+        <div class="item item-divider"></div>
+        <a href="{{pathFor 'listPotCabeRawit'}}"><li class="item">Cabe Rawit</li></a>
+        <a href="{{pathFor 'listPotJambuAir'}}"><li class="item">Jambu Air</li></a>
+        <a href="{{pathFor 'listPotJambuBiji'}}"><li class="item">Jambu Biji</li></a>
+        <a href="{{pathFor 'listPotJerukSiam'}}"><li class="item">Jeruk Siam</li></a>
+        <div class="item item-divider"></div>
+        <a href="{{pathFor 'listPotKacangP'}}"><li class="item">Kacang Panjang</li></a>
+        <a href="{{pathFor 'listPotKangkung'}}"><li class="item">Kangkung</li></a>
+        <a href="{{pathFor 'listPotKelapa'}}"><li class="item">Kelapa</li></a>
+        <a href="{{pathFor 'listPotKetimun'}}"><li class="item">Ketimun</li></a>
+        <div class="item item-divider"></div>
+        <a href="{{pathFor 'listPotMangga'}}"><li class="item">Mangga</li></a>
+        <a href="{{pathFor 'listPotMelon'}}"><li class="item">Melon</li></a>
+        <a href="{{pathFor 'listPotNangka'}}"><li class="item">Nangka</li></a>
+        <a href="{{pathFor 'listPotPadi'}}"><li class="item">Padi</li></a>
+        <div class="item item-divider"></div>
+        <a href="{{pathFor 'listPotPepaya'}}"><li class="item">Pepaya</li></a>
+        <a href="{{pathFor 'listPotSemangka'}}"><li class="item">Semangka</li></a>
+        <a href="{{pathFor 'listPotSiwalan'}}"><li class="item">Siwalan</li></a>
+        <a href="{{pathFor 'listPotTebu'}}"><li class="item">Tebu</li></a>
+        <div class="item item-divider"></div>
+        <a href="{{pathFor 'listPotTerong'}}"><li class="item">Terong</li></a>
+        <a href="{{pathFor 'listPotTomat'}}"><li class="item">Tomat</li></a>
+
+    </ul>
+        
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

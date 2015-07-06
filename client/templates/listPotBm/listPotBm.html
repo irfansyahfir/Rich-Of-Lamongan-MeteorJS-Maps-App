@@ -1,0 +1,53 @@
+<template name="listPotBm">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="cariPotensi"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Bawang Merah</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <div class="list">
+        <a class="item item-icon-left" href="{{pathFor 'listKecSukorame'}}">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Ngimbang
+            <span class="item-note">
+                169 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Bluluk
+            <span class="item-note">
+                117 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Sugio
+            <span class="item-note">
+                40 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Sukorame
+            <span class="item-note">
+                25 Ton/Tahun
+            </span>
+        </a>
+    </div>
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

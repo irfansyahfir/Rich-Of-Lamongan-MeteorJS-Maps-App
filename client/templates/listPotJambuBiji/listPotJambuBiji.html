@@ -1,0 +1,53 @@
+<template name="listPotJambuBiji">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="cariPotensi"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Jambu Biji</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Paciran
+            <span class="item-note">
+                130 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Pucuk
+            <span class="item-note">
+                66 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Tikung
+            <span class="item-note">
+                53 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Mantup
+            <span class="item-note">
+                52 Ton/Tahun
+            </span>
+        </a>
+    </div>
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

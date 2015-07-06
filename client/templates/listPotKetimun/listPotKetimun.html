@@ -1,0 +1,46 @@
+<template name="listPotKetimun">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="cariPotensi"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Ketimun</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Solokuro
+            <span class="item-note">
+                0,4 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Sukodadi
+            <span class="item-note">
+                0,02 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Lamongan
+            <span class="item-note">
+                0,01 Ton/Tahun
+            </span>
+        </a>
+    </div>
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

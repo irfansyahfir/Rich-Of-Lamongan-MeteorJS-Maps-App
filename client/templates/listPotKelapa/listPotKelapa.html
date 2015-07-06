@@ -1,0 +1,53 @@
+<template name="listPotKelapa">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="cariPotensi"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Kelapa</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Brondong
+            <span class="item-note">
+                33 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Sambeng
+            <span class="item-note">
+                24 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Paciran
+            <span class="item-note">
+                20 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Bluluk
+            <span class="item-note">
+                20 Ton/Tahun
+            </span>
+        </a>
+    </div>
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

@@ -1,0 +1,54 @@
+<template name="listPotKacangP">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="cariPotensi"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Kacang Panjang</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <div class="list">
+        <a class="item item-icon-left" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Solokuro
+            <span class="item-note">
+                28 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Babat
+            <span class="item-note">
+                15 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Deket
+            <span class="item-note">
+                12 Ton/Tahun
+            </span>
+        </a>
+        <a class="item item-icon-left listPot-margin" href="#">
+            <i class="icon ion-social-buffer"></i>
+            Kecamatan Kalitengah
+            <span class="item-note">
+                9 Ton/Tahun
+            </span>
+        </a>
+        
+    </div>
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

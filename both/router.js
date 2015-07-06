@@ -22,6 +22,59 @@ Router.map(function() {
       };
     }
   });
+  this.route('cariPotensi');
+  this.route('listPotBm');
+  this.route('listPotBlewah');
+  this.route('listPotBlimbing');
+  this.route('listPotCabeBesar');
+  this.route('listPotCabeRawit');
+  this.route('listPotJambuAir');
+  this.route('listPotJambuBiji');
+  this.route('listPotJerukSiam');
+  this.route('listPotKacangP');
+  this.route('listPotKangkung');
+  this.route('listPotKelapa');
+  this.route('listPotKetimun');
+  this.route('listPotMangga');
+  this.route('listPotMelon');
+  this.route('listPotNangka');
+  this.route('listPotPadi');
+  this.route('listPotPepaya');
+  this.route('listPotSemangka');
+  this.route('listPotSiwalan');
+  this.route('listPotTebu');
+  this.route('listPotTerong');
+  this.route('listPotTomat');
+           
+           this.route('listKecSukorame');
+           this.route('listKecBluluk');
+           this.route('listKecNgimbang');
+           this.route('listKecSambeng');
+           this.route('listKecMantup');
+           this.route('listKecKembangbahu');
+           this.route('listKecSugio');
+           this.route('listKecKedungpring');
+           this.route('listKecModo');
+           this.route('listKecBabat');
+           this.route('listKecPucuk');
+           this.route('listKecSukodadi');
+           this.route('listKecLamongan');
+           this.route('listKecTikung');
+           this.route('listKecSarirejo');
+           this.route('listKecDeket');
+           this.route('listKecGlagah');
+           this.route('listKecKarangbinangun');
+           this.route('listKecTuri');
+           this.route('listKecKalitengah');
+           this.route('listKecKaranggeneng');
+           /*this.route('listKecSekaran');
+           this.route('listKecMaduran');
+           this.route('listKecLaren');
+           this.route('listKecSolokuro');
+           this.route('listKecPaciran');
+           this.route('listKecBrondong');*/
+           
+  this.route('directionPage');
   this.route('headersFooters');
   this.route('lists');
   this.route('loading');
@@ -40,3 +93,10 @@ Router.map(function() {
   this.route('tabs.four', {path: '/tabs/four', layoutTemplate: 'tabsLayout'});
   this.route('userAccounts');
 });
+
+
+
+Router.onBeforeAction(function() {
+                      GoogleMaps.load();
+                      this.next();
+                      }, { only: ['/', 'mapDirection'] });

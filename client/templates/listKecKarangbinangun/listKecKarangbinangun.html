@@ -1,0 +1,113 @@
+<template name="listKecKarangbinangun">
+  {{#contentFor "headerButtonLeft"}}
+    {{>ionNavBackButton path="cariPotensi"}}
+  {{/contentFor}}
+  {{#contentFor "headerTitle"}}
+    <h1 class="title">Kecamatan Karangbinangun</h1>
+  {{/contentFor}}
+
+  {{#ionView}}
+
+    {{#ionContent}}
+    {{#ionList}}
+    
+    {{#ionItem}}
+    
+    <div class="list">
+        <div class="item item-divider item-dark">
+            Luas Lahan
+        </div>
+        <a class="item item-icon-left">
+            <i class="icon ion-ios-analytics"></i>
+            Luas Lahan Sawah
+            <span class="item-note">
+                3.886 Ha
+            </span>
+        </a>
+        <a class="item item-icon-left">
+            <i class="icon ion-ios-analytics-outline"></i>
+            Luas Lahan Non Sawah
+            <span class="item-note">
+                215 Ha
+            </span>
+        </a>
+        <a class="item item-icon-left">
+            <i class="icon ion-ios-analytics-outline"></i>
+            Luas Lahan Bukan Pertanian
+            <span class="item-note">
+                191 Ha
+            </span>
+        </a>
+        <a class="item item-icon-left">
+            <i class="icon ion-ios-analytics-outline"></i>
+            Total Luas Lahan
+            <span class="item-note">
+                4.292 Ha
+            </span>
+        </a>
+        
+        <!--SEPARATEEEEEEE-->
+        <div class="item item-divider item-assertive listPot-margin2">
+            Hasil Bumi Pertanian
+        </div>
+        
+        <a class="item item-icon-left item-stable listPot-margin">
+            <i class=" icon ion-ionic"></i>
+            Blimbing
+        </a>
+        <ul class="list">
+            <li class="item">
+                Luas Area Tanam
+                <span class="item-note">
+                    72 Pohon
+                </span>
+            </li>
+            <li class="item">
+                Produksi Pertahun
+                <span class="item-note">
+                    7 Ton
+                </span>
+            </li>
+            <li class="item">
+                Rata-Rata Produksi
+                <span class="item-note">
+                    0,097 Ton/Pohon
+                </span>
+            </li>
+        </ul>
+        
+        <!--PPPPPPPP-->
+        <a class="item item-icon-left item-stable">
+            <i class=" icon ion-ionic"></i>
+            Padi
+        </a>
+        <ul class="list">
+            <li class="item">
+                Luas Area Tanam
+                <span class="item-note">
+                    4.368 Ha
+                </span>
+            </li>
+            <li class="item">
+                Produksi Pertahun
+                <span class="item-note">
+                    24.845 Ton
+                </span>
+            </li>
+            <li class="item">
+                Rata-Rata Produksi
+                <span class="item-note">
+                    5,69 Ton/Ha
+                </span>
+            </li>
+        </ul>
+        
+    </div>
+    {{/ionItem}}
+        
+    {{/ionList}}
+    {{/ionContent}}
+    
+  {{/ionView}}
+
+</template>

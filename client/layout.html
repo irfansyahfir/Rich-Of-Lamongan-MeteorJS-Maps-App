@@ -1,32 +1,22 @@
 <template name="layout">
   {{#ionBody}}
 
-    {{#ionSideMenuContainer}}
+    {{#ionSideMenuContainer side="disable"}}
 
       {{#ionSideMenus}}
 
         {{#ionSideMenu}}
-          <div class="bar bar-header bar-dark">
-            <h1 class="title">Left Menu</h1>
+          <div class="bar bar-header bar-light">
+            <h1 class="title">Rich Of Lamongan</h1>
           </div>
           <div class="content has-header">
             <div class="list">
-              <div class="item item-icon-right" data-ion-menu-close>
-                Close Me {{> ionIcon icon="ios-arrow-right"}}
-              </div>
-            </div>
-          </div>
-        {{/ionSideMenu}}
-
-        {{#ionSideMenu side="right"}}
-          <div class="bar bar-header bar-dark">
-            <h1 class="title">Right Menu</h1>
-          </div>
-          <div class="content has-header">
-            <div class="list">
-              <div class="item item-icon-left" data-ion-menu-close>
-                {{> ionIcon icon="ios-arrow-left"}} Close Me
-              </div>
+              <a href="{{pathFor 'cariPotensi'}}"><div class="item item-icon-right" data-ion-menu-close>
+                  Cari Potensi
+              </div></a>
+              <a href="{{pathFor 'cariPotensi'}}"><div class="item item-icon-right" data-ion-menu-close>
+                  Tentang Lamongan
+              </div></a>
             </div>
           </div>
         {{/ionSideMenu}}
@@ -35,7 +25,7 @@
 
       {{#ionSideMenuContent}}
 
-        {{> ionNavBar class="bar-positive"}}
+        {{> ionNavBar class="bar-light"}}
 
         {{#ionNavView}}
           {{> yield}}
